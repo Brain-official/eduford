@@ -1,4 +1,4 @@
-document.querySelector('#nav').innerHTML +=`<nav>
+document.querySelector('#nav').innerHTML += `<nav>
             <a href="index.html"><img class="logo" src="eduford_images/logo.png" alt="logo"></a>
 
             <div class="nav-links" id="navLinks">
@@ -12,4 +12,19 @@ document.querySelector('#nav').innerHTML +=`<nav>
                 </ul>
             </div>
             <i class="fas fa-bars" onclick="showMenu()"></i>
-        </nav>`
+        </nav>`;
+
+const course = [
+    { key: 'Geology', value: 1 },
+    { key: 'Chemistry', value: 2 },
+    { key: "Computer", value: 3 },
+    { key: "Programing", value: 4 }
+]
+
+
+
+
+
+course.forEach(val => {
+    document.querySelector('#course-list').innerHTML += `<option>${val.key}</option>`
+})
