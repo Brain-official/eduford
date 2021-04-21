@@ -4,7 +4,7 @@ document.querySelector('#nav').innerHTML +=`<nav>
             <div class="nav-links" id="navLinks">
                 <i class="fas fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/menu/about.html">About</a></li>
                     <li><a href="/menu/course.html">Course</a></li>
                     <li><a href="/menu/blog.html">Blog</a></li>
