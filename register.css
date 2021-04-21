@@ -1,0 +1,319 @@
+* {
+     padding: 0;
+     margin: 0;
+     font-family: 'Poppins', sans-serif;
+}
+
+
+
+nav {
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    display: block;
+    
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 8px;
+    position: relative;
+    padding: 5px 8px;
+}
+
+
+a .logo {
+    width: 150px;
+}
+
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: ' ';
+    width: 0;
+    height: 2px;
+    background-color: #f44336;
+    margin: auto;
+    display: block;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+
+nav .fas {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* '''''''''''''''''''''''''''''''registration section''''''''''''''''''''''''''''''' */
+
+.registration-col {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)),url(eduford_images/library.png);
+    background-size: cover;
+    /* position: relative; */
+    width: 100%;
+    background-position: center;
+}
+
+
+
+.container {
+    padding-top: 100px;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+
+
+
+
+
+.registration-form {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    margin-bottom: 30px;
+    padding: 32px 15px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 15px;
+    left: 353px;
+}
+
+.registration-form h3, .login h3 {
+    color: #f44336;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+
+
+
+.reg-form input, .reg-form textarea {
+    width: 50%;
+    padding: 5px;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #000
+}
+
+
+.reg-form select {
+    margin-left: 12px;
+}
+
+.reg-form label {
+    color: #fff;
+}
+
+
+
+
+.hero-btn {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px 34px;
+    background: transparent;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reg-form .reg-btn {
+    background: #f44336;
+}
+
+.login-form .log-btn {
+    background: #f44336;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* '''''''''''''''login section''''''''''''''' */
+
+
+.login {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 9, 9, 0.904)), transparent;
+    margin-bottom: 30px;
+    padding: 12px 20px;
+    width: 50%;
+    transform: translate(50%, -20%);
+}
+
+
+
+.login-page {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(eduford_images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+.login-form input {
+    width: 100%;
+    padding: 5px;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+
+}
+
+.login-form .bt {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 900px) {
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        text-align: left;
+        visibility: hidden;
+        transition: 1s;
+        
+    }
+
+    nav .fas {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        
+    }
+
+    .nav-links ul {
+        padding: 30px;
+        
+    }
+
+
+
+    .registration-form {
+        position: absolute;
+        top: 55px;
+        left: 55px;   
+        width: 80%;
+        height: 86vh;
+        padding: 12px 22px;
+    }
+
+
+    .login {
+        width: 100%;
+        position: relative;
+        top: 30px;
+        right: 230px;
+    }
+    /* .reg-form select {
+        width: 200px;
+    } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
